@@ -4,7 +4,7 @@ For a lot of years there was no app in AmigaOS 4 to switch language on keyboard.
 
 Now you can use the KeymapSwitcher docky (http://os4depot.net/index.php?function=showfile&file=utility/docky/keymapswitcher_docky.lha) to do the same thing.
 
-## How to use ## 
+## How to use
 
 ### English guide ###
 1. Open Locale prefs and at the "Prefered Languages" select first the Greek (greek_ISO-8859-7) and second the English
@@ -22,20 +22,4 @@ The above line runs the script that switches the keymap by using the keys "Left 
 
 If everything goes fine, then the language switch should work.
 
-### Greek guide ###
-
-1. Πηγαίνετε στις ρυθμίσεις, στο Locale οι "Προτιμόμενες Γλώσσες" (Prefered Languages) να έχουν στην σειρά πρώτα τα ελληνικά (greek_ISO-8859-7) και μετά τα english.
-2. Πηγαίνετε στις ρυθμίσεις, στο Input και κάντε τις ρυθμίσεις για το mouse και στην λίστα "Πληκτρολόγιο" (Keyboard) επιλέξτε το "English & Greek". Από το menu επάνω επιλέξτε "Εργασία > Αποθήκευση ως" και αποθηκεύστε τις ρυθμίσεις στο "SYS:Prefs/Presets" ως "usa_input.prefs"
-3. Συνεχίστε στις ρυθμίσεις Input και αλλάξτε στην λίστα "Πληκτρολόγιο" (Keyboard) επιλέξτε το "Greek & English". Από το menu επάνω επιλέξτε "Εργασία > Αποθήκευση ως" και αποθηκεύστε τις ρυθμίσεις στο "SYS:Prefs/Presets" ως "gr_input.prefs".
-4. Αντιγράψτε τα αρχεία από το keyb_change_0.7/S/Shell/#? στον φάκελο SYS:S/Shell/.Βεβαιωθείτε ότι στο εικονίδιο του αρχείου είναι επιλεγμένο σαν "Εκτελέσιμο (Executable)" και ως "Γραπτό (Script)". 
-5. Αντιγράψτε τα αρχεία από το keyb_change_0.7/S/ARexx/#? στον φάκελο SYS:S/ARexx/ 
-6. Εισάγετε στο εικονίδιο του FKey, το οποίο καλό είναι να τρέχει από το WBStartup, την γραμμή:
-
-!"LALT `!" RUN S:Shell/ChangeKeymap 
-
-Με την παραπάνω γραμμή, και για όσο το FKey τρέχει στο περιθώριο, μπορείτε να εναλλάσετε το Αγγλικό με το Ελληνικό πληκτρολόγιο μέσω των πλήκτρων "Αριστ. ALT + `". Εάν θέλετε μπορείτε να το αλλάξετε σε ό,τι συνδυασμό πλήκτρων σας βολεύει. 
-Tέλος, θα πρέπει μέσω του System>TypeManager να αποδώσετε την ISO8859-7 κωδικοποίηση στα truetypefonts που θέλετε να χρησιμοποιήσετε! 
-
-Σημ: Εάν σε κάποια προγράμματα βλέπετε ότι η εναλλαγή γίνεται αλλά αντί για ελληνικά σας εμφανίζει περίεργους χαρακτήρες, δείτε μήπως στις ρυθμίσεις του συγκεκριμένου προγράμματος χρειάζεται να του ορίσετε την γραμματοσειρά που θέλετε να χρησιμοποιείτε. Αυτό συμβαίνει συνήθως στο Notepad.
-
-Εάν όλα πάνε καλά τότε η εναλλαγή των πλήκτρων θα δουλεύει άψογα.
+A Greek guide you can find at http://amitrace.gr/articles_show.php?arid=9
