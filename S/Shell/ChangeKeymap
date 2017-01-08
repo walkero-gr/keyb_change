@@ -1,0 +1,24 @@
+; $VER: Change Keymap between two languages
+; Created by George Sokianos 
+; for the Amiga OS4 v0.7 16/2/2013
+; contact me at walkero@yahoo.com
+
+FAILAT 21
+GetEnv >NIL: *>NIL: keymap
+IF WARN
+	c:SetEnv keymap SAVE usa_gr_ISO-8859-7
+ENDIF
+
+IF $keymap eq gr_usa_ISO-8859-7
+	C:copy sys:prefs/presets/usa_input.prefs env:sys/input.prefs
+	c:SetEnv keymap usa_gr_ISO-8859-7
+	If EXISTS Sys:system/RinghioServer
+        	rx S:ARexx/msg_ringhio.rexx Language change|US language enabled|SYS:Locale/Flags/Countries/United States
+	EndIf
+ELSE
+	C:copy sys:prefs/presets/gr_input.prefs env:sys/input.prefs
+	c:SetEnv keymap gr_usa_ISO-8859-7
+	If EXISTS Sys:system/RinghioServer
+        	rx S:ARexx/msg_ringhio.rexx Language change|Greek language enabled|SYS:Locale/Flags/Countries/Greece
+	EndIf
+ENDIF
